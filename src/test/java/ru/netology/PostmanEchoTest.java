@@ -19,7 +19,7 @@ public class PostmanEchoTest {
         // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", equalTo ("test Text"));
+                .body("data", equalTo ("test TEXT"));
     }
 
     @Test
@@ -35,7 +35,7 @@ public class PostmanEchoTest {
                 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", equalTo ("456"));
+                .body("data", equalTo ("457"));
     }
 
     @Test
@@ -52,6 +52,6 @@ public class PostmanEchoTest {
                 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", equalTo ("Русские слова"));
+                .body("data", equalTo ("Русские словa"));
     }
 }
